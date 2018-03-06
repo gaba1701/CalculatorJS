@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="calculator1_2.js"></script>
+    <link rel="stylesheet" href="calculator1_2.css">
+</head>
+
+<body>
+<!--create div class calcul for be able to apply css to all of it-->
+    <div class="calcul">
+        <!--create div class screen for be able to apply css to all of it-->
+        <div class="screen">
+           <!-- input field where the user can enter data and specifies the value of an <input> element with format of size -->
+            <input type="text" readonly size="18" id="calc">
+        </div>
+        <!--div class  -->
+        <div class="keys">
+            <!-- new paragraph -->
+            <p>
+                <!-- create buttons with executing javascript when button is clicked-->
+                <input type="button" class="button blue" value="mrc" onclick='c("It is too advanced")'>
+                <input type="button" class="button blue" value="m-" onclick='c("No luck this time")'>
+                <input type="button" class="button blue" value="m+" onclick='c("Keep trying :)")'>
+                <input type="button" class="button green" value="/" onclick='v("/")'>
+            </p>
+            <p>
+                <input type="button" class="button yellow" value="7" onclick='v("7")'>
+                <input type="button" class="button yellow" value="8" onclick='v("8")'>
+                <input type="button" class="button yellow" value="9" onclick='v("9")'>
+                <input type="button" class="button green" value="*" onclick='v("*")'>
+            </p>
+            <p>
+                <input type="button" class="button yellow" value="4" onclick='v("4")'>
+                <input type="button" class="button yellow" value="5" onclick='v("5")'>
+                <input type="button" class="button yellow" value="6" onclick='v("6")'>
+                <input type="button" class="button green" value="-" onclick='v("-")'>
+            </p>
+            <p>
+                <input type="button" class="button yellow" value="1" onclick='v("1")'>
+                <input type="button" class="button yellow" value="2" onclick='v("2")'>
+                <input type="button" class="button yellow" value="3" onclick='v("3")'>
+                <input type="button" class="button green" value="+" onclick='v("+")'>
+            </p>
+            <p>
+                <input type="button" class="button yellow" value="0" onclick='v("0")'>
+                <input type="button" class="button yellow" value="." onclick='v(".")'>
+                <input type="button" class="button yellow" value="C" onclick='c("")'>
+                <input type="button" class="button orange" value="=" onclick='e()'>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
